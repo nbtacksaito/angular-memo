@@ -1,0 +1,13 @@
+<html ng-app="MyApp">
+<head>
+  <meta charset="utf-8">
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/myapp4.js"></script>
+</head>
+<body>
+<div ng-controller="MyAppCtrl as app">
+  <button ng-click="app.click_func()">Click Me</button>
+  <p ng-show="app.after_click">Clickしました</p>
+</div>
+</body>
+</html>

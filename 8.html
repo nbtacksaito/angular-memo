@@ -1,0 +1,22 @@
+<html ng-app="MyApp">
+<head>
+  <meta charset="utf-8">
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/myapp8.js"></script>
+</head>
+<body>
+<div ng-controller="MyAppCtrl as app">
+
+  <div ng-repeat="(key,val) in app.obj.users">
+    <ul>
+      <li>
+        key=<span ng-bind="key"></span>:
+        name=<span ng-bind="val.name"></span>,
+        age=<span ng-bind="val.age"></span>
+      </li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>

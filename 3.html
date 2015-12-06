@@ -1,0 +1,36 @@
+<html ng-app="MyApp">
+<head>
+  <meta charset="utf-8">
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/myapp3.js"></script>
+</head>
+<body>
+<div ng-controller="MyAppCtrl as app">
+
+  <p ng-show="true">見える</p>
+  <p ng-show="false">見えない</p>
+  <p ng-hide="true">見えない</p>
+  <p ng-hide="false">見える</p>
+
+  <table border="1">
+    <tr>
+      <td></td>
+      <td>真</td>
+      <td>偽</td>
+    </tr>
+    <tr>
+      <td>ng-show</td>
+      <td><span ng-show="app.show_1">○</span></td>
+      <td><span ng-show="app.show_2">×</span></td>
+    </tr>
+    <tr>
+      <td>ng-hide</td>
+      <td><span ng-hide="app.show_1">×</span></td>
+      <td><span ng-hide="app.show_2">○</span></td>
+    </tr>
+  </table>
+  <p ng-show="app.obj">objectあるよ</p>
+  <p ng-show="app.show_2 ? false: true">3項演算子</p>
+</div>
+</body>
+</html>

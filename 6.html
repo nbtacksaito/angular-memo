@@ -1,0 +1,13 @@
+<html ng-app="MyApp">
+<head>
+  <meta charset="utf-8">
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/myapp6.js"></script>
+</head>
+<body>
+<div ng-controller="MyAppCtrl as app">
+  <img ng-src="{{app.image_path}}">
+  <!-- <img src="./{{imagePath}}" /> 404のログ出る　データバインディングする前にアクセスされちゃうから？ -->
+</div>
+</body>
+</html>

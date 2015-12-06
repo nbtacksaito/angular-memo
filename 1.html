@@ -1,0 +1,12 @@
+<html ng-app="MyApp"><!--このタグの中でMyApp使うよっていう感じ -->
+<head>
+  <meta charset="utf-8"><!--いつも通りの文字コード -->
+  <script src="js/lib/angular.min.js"></script><!--Angular使うよ-->
+  <script src="js/myapp1.js"></script>
+</head>
+<body>
+  <div ng-controller="MyAppCtrl as app">
+    <h2>app.Message : {{app.message}}</h2>
+  </div>
+</body>
+</html>

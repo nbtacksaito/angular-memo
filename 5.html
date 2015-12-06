@@ -1,0 +1,22 @@
+<html ng-app="MyApp">
+<head>
+  <meta charset="utf-8">
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/myapp5.js"></script>
+  <style>
+    .red {
+      color: red;
+    }
+    .blue {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+<div ng-controller="MyAppCtrl as app">
+  <p ng-class="{'red': app.color.is_red}">赤文字</p>
+  <button ng-click="app.change_color()">色変えちゃいます！</button>
+  <p ng-class="{'red': app.color.is_red, 'blue': app.color.is_blue}">Sample Text 1234 5678</p>
+</div>
+</body>
+</html>
